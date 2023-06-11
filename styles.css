@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5px;
+}
+
+.icon-cart{
+    width: 40px;
+}
+
+body{
+    margin: 0 auto;
+    width: 85vw;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    
+}
+img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: all .5s;
+}
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px ;
+}
+
+@media screen and (max-width:600px){
+    .container-items{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+.item{
+    border-radius: 10px;
+
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-producto{
+    padding: 15px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.item:hover img{
+    transform: scale(1.1);
+}
+
+.contenedor-imagen{
+    overflow: hidden;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.info-producto button{
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.iconos-redes{
+    width: 20px;
+    height: 20px;
+}
+
+.parrafo-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
